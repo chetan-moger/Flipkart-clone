@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+margin: 0px;
+padding:0px;
+}
+    
+    .main{
+        height: 200px;
+        
+    }
+    .navbar{
+        height: 52px;
+        width: 100%;
+        background-color: #2874f0;
+        display: flex;
+        padding:none;
+        align-items: center;
+        padding-left: 300px;
+        padding-right: 300px;
+        gap:30px;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 999;
+
+
+
+    }
+    .img{
+        height: 25px;
+        
+        
+    }
+    .srcbar{
+        width:400px;
+        height: 31px;
+        
+        
+    }
+    input:focus{
+        outline: none;
+    }
+    input{
+        border: 1px solid #999 ;
+        
+
+    }
+    .srclogo{
+        height:30px;
+        width: 30px;
+       
+    }
+    .srcbtn{
+        background-color: white;
+        border: none;
+        position:relative;
+        left:-69px;
+        height:31px;
+        width:35px;
+        
+        
+    }
+    .cart{
+        margin-left:100px;
+        display: flex;
+        gap:20px;
+    }
+    .cart a:hover{
+        color:black;
+        
+        padding:1px;
+        display:block;
+        
+    }
+    a{
+        text-decoration: none;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        color:white;
+    }
+    h1{
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .product-details{
+        display: flex;
+        height: 300px;
+        
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 80px;
+        gap:30px;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .product-lhs{
+       
+        height: 750px;
+        width: 500px;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        
+        
+        
+    }
+    .product-rhs{
+        
+        height: 750px;
+        width:800px;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        
+        
+        
+
+    }
+    #product-img{
+        width: 200px;
+       
+        
+        
+    }
+    #product-rating{
+        background-color:lightgreen;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        width:25px;
+    }
+    .buybtn{
+        display:flex;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 30px;
+        gap:30px;
+    }
+    .add{
+        width: 50%;
+        height: 50px;
+        font-size: 150%;
+        background-color: #ff9f00;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        border:none;
+        animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      
+        
+        
+    }
+    .buy{
+        width:50%;
+        font-size: 150%;
+        background-color: #fb641b;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        border:none;
+        animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      
+    }
+    .product-image{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      
+    }
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+    </style>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img class="img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png">
+           
+                <input class="srcbar" type="text" placeholder="Search for products and more">
+                <button class="srcbtn"><img class="srclogo" src="srclog.png"></button>
+           <div class="cart"><a href="">Chetan</a>
+            <a href="">home</a>
+            <a href="">cart</a>
+        </div>
+        
+        
+        </div>
+       
+        <div class="product-details">
+                <div class="product-lhs">
+                    <div class="product-image">
+                      
+
+                    </div>
+                    <div class="buybtn">
+                        <button class="add" onclick="addproduct()">Add to Cart</button>
+                        <button class="buy" onclick="buyproduct()">Buy now</button>
+                    </div>
+                </div>
+                <div class="product-rhs">
+                    <div class="product-info">
+
+                    </div>
+                    <div class="offers">
+                        <h3>Available offers</h3>
+                    <p><b>Bank Offer</b> 10% off on ICICI Bank Credit Cards, up to ₹750. On orders of ₹5000 and aboveT&C</p>
+                    <p><b>Bank Offer</b> 10% off on ICICI Bank Debit Cards, up to ₹500. On orders of ₹5000 and aboveT&C</p>
+                    <p><b>Special Price</b> Get extra ₹473 off (price inclusive of discount)T&C</p>
+
+
+                    </div>
+                    <div class="description">
+                        Galaxy A22 , the new awesome A series device comes with a 48MP OIS (Optical Image stabilisation) Quad Camera
+            that provides sharp and steady pictures and videos evertime you shoot, segment best HD+ SuperAMOLED 90Hz
+            display with 600 Nits High Brightness mode for a bright, clear and smooth viewing experience be it while
+            watching your favorite movies, scrolling on social media or gaming. It also sports a long lasting 5000 mAh
+            battery with fast charging. Galaxy A22 comes with the latest OneUI 3.1 on Android 11 out of the box packed
+            with defence grade Knox security, and Samsung Pay (NFC) for simple, secure payments right from your phone.
+
+
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+    
+    
+      
+      
+  </div>
+        
+    </div>
+    
+    
+</body>
+<script>
+    var product = JSON.parse(localStorage.getItem("CLICKED"))
+    
+    var image_div = document.querySelector(".product-image")
+
+    var img = document.createElement('img')
+    img.src = product.img
+    img.id = 'product-img'
+    image_div.append(img)
+    var product_info = document.querySelector('.product-info')
+
+
+    var title = document.createElement('p')
+    title.innerText = product.name
+    title.id = 'product-title'
+
+
+
+    var rating = document.createElement('p')
+    rating.innerText = product.rating
+    rating.id = 'product-rating'
+
+
+
+    var price = document.createElement('p')
+    price.innerText = product.price
+    price.id = 'product-price'
+
+
+
+    product_info.append(title, rating, price)
+
+    function buyproduct(){
+        alert("Thank you for shopping")
+    }
+    function addproduct(){
+        alert("Product added to cart")
+    }
+
+
+</script>
+</html>
